@@ -1,4 +1,6 @@
 """Tests for the NZBGet integration."""
+from datetime import timedelta
+
 from homeassistant.components.nzbget.const import DOMAIN
 from homeassistant.const import (
     CONF_HOST,
@@ -38,7 +40,7 @@ YAML_CONFIG = {
     CONF_NAME: "GetNZBsTest",
     CONF_PASSWORD: "",
     CONF_PORT: 6789,
-    CONF_SCAN_INTERVAL: 5,
+    CONF_SCAN_INTERVAL: timedelta(seconds=5),
     CONF_SSL: False,
     CONF_USERNAME: "",
 }
