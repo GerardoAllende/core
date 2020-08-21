@@ -1,4 +1,4 @@
-"""Modesl used by multiple MQTT modules."""
+"""Models used by multiple MQTT modules."""
 import datetime as dt
 from typing import Callable, Optional, Union
 
